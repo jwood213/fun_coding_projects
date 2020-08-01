@@ -7,7 +7,8 @@ x=x+"*******************"+"\n"
 if ego == "small":
 	x=x+name+"\n"
 elif ego == "medium":
-	x=x+name * 10
+	for y in range(1,11):
+		x=x+str(y)+" "+name+"\n"
 elif ego == "large":
 	x=x+name * 100
 else: 
