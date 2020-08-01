@@ -1,0 +1,51 @@
+the ego problem.
+
+step 1.
+ask the user for their name
+print it back to the screen
+
+step 2. (for all remaining steps, add onto the previous one)
+ask the user for how big their ego is
+if the answer is small, then print their name once, otherwise print "User has no ego"
+
+step 3. (add cases)
+add two more cases for how big their ego is. If 'medium', print their name ten times, if 'large' 100 times.
+
+step 4. (print to file too)
+print the result to the screen and to a file. If the output file already exists, overwrite it.
+
+step 5. (pretty print)
+include in both prinouts what their input was for each input, and display the number of times the ego was printed on the same line (only one name per line) Example below:
+
+User's name: Daaaave
+User's ego: medium
+*******************
+1 Daaaave
+2 Daaaave
+3 Daaaave
+4 Daaaave
+5 Daaaave
+6 Daaaave
+7 Daaaave
+8 Daaaave
+9 Daaaave
+10 Daaaave
+
+step 6. (String manipulation)
+if the user inputs capital letters for their ego size, change the string to all lowercase before comparing it
+
+step 7. (String manipulation)
+add to both reports their name reversed
+
+step 8. (Random)
+import the random library
+print a random number between 2 and 5 in the report
+
+step 9. (Random)
+for the following titles -> (Mr. Mrs. Dr. Lord Sir) assign one randomly to the user's name (before their name)
+
+step 10. (conditionals)
+if "sir" is chosen, instead of prepending it, add "Esquire" after their name
+
+step 11. (Random)
+Create a random ten digit social security number and include in only the screen, not the file (because of HIPPA)
