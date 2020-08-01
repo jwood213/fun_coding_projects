@@ -5,12 +5,13 @@ x="User's name: "+name+"\n"
 x=x+"User's ego: "+ego+"\n"
 x=x+"*******************"+"\n"
 if ego == "small":
-	x=x+name+"\n"
+	x=x+"1 "+name+"\n"
 elif ego == "medium":
 	for y in range(1,11):
 		x=x+str(y)+" "+name+"\n"
 elif ego == "large":
-	x=x+name * 100
+	for y in range(1,101):
+		x=x+str(y)+" "+name+"\n"
 else: 
 	x=x+"User has no ego" 
 print(x,file=f)	
