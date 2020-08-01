@@ -1,8 +1,9 @@
 name=input("What is your name? ")
-ego=input("How big is your ego? ")
+egoinput=input("How big is your ego? ")
+ego=egoinput.lower()
 f= open("your_ego.txt", 'w+')
 x="User's name: "+name+"\n" 
-x=x+"User's ego: "+ego+"\n"
+x=x+"User's ego: "+egoinput+"\n"
 x=x+"*******************"+"\n"
 if ego == "small":
 	x=x+"1 "+name+"\n"
