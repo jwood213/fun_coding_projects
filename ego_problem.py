@@ -2,7 +2,9 @@ name=input("What is your name? ")
 egoinput=input("How big is your ego? ")
 ego=egoinput.lower()
 f= open("your_ego.txt", 'w+')
-x="User's name: "+name+"\n" 
+x="User's name: "+name+"\n"
+namereveresed=name[::-1]
+x=x+"User's name reversed: "+namereveresed+"\n"
 x=x+"User's ego: "+egoinput+"\n"
 x=x+"*******************"+"\n"
 if ego == "small":
