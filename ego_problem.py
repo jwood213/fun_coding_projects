@@ -1,15 +1,16 @@
 name=input("What is your name? ")
 ego=input("How big is your ego? ")
 f= open("your_ego.txt", 'w+')
-x="default"
+x="User's name: "+name+"\n" 
+x=x+ "User's ego: "+ego+"\n"
 if ego == "small":
-	x=name
+	x=x+name+"\n"
 elif ego == "medium":
-	x= name * 10
+	x=x+name * 10
 elif ego == "large":
-	x= name * 100
+	x=x+name * 100
 else: 
-	x= "User has no ego" 
+	x=x+"User has no ego" 
 print(x,file=f)	
 print(x)
 f.close
