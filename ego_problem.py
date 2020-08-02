@@ -1,13 +1,22 @@
 name=input("What is your name? ")
-ego=input("How big is your ego? ")
-
+egoinput=input("How big is your ego? ")
+ego=egoinput.lower()
+f= open("your_ego.txt", 'w+')
+x="User's name: "+name+"\n"
+namereveresed=name[::-1]
+x=x+"User's name reversed: "+namereveresed+"\n"
+x=x+"User's ego: "+egoinput+"\n"
+x=x+"*******************"+"\n"
 if ego == "small":
-	print(name)
+	x=x+"1 "+name+"\n"
 elif ego == "medium":
-	print(name * 10)
+	for y in range(1,11):
+		x=x+str(y)+" "+name+"\n"
 elif ego == "large":
-	print(name * 100)
+	for y in range(1,101):
+		x=x+str(y)+" "+name+"\n"
 else: 
-	print("User has no ego")
-with open('your_ego.txt', 'a+') as f:
-	f.write('your ego')
+	x=x+"User has no ego" 
+print(x,file=f)	
+print(x)
+f.close
