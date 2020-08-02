@@ -37,15 +37,64 @@ if the user inputs capital letters for their ego size, change the string to all 
 step 7. (String manipulation)
 add to both reports their name reversed
 
+step 7.a (String manipulation)
+add a new column in the printed output and file where we print the user's name reversed like below:
+
+User's name: Daaaave
+User's ego: medium
+User's name reversed: evaaaaD
+*******************
+1 Daaaave evaaaaD
+2 Daaaave evaaaaD
+3 Daaaave evaaaaD
+4 Daaaave evaaaaD
+5 Daaaave evaaaaD
+6 Daaaave evaaaaD
+7 Daaaave evaaaaD
+8 Daaaave evaaaaD
+9 Daaaave evaaaaD
+10 Daaaave evaaaaD
+
+step 7.b (improve user experience)
+Allow the user to enter the first letter of their ego size instead of typing the whole word. Example:
+
+>>What is your ego size? s
+User's name: Daaaave
+User's ego: small
+User's name reversed: evaaaaD
+*******************
+1 Daaaave evaaaaD
+
+step 7.c (improve user experience)
+Print the choices for the ego size for the user to see. Example:
+
+>>What is your ego size? (Small, Medium, Large)
+
 step 8. (Random)
 import the random library
-print a random number between 2 and 5 in the report
+print a random number in the report's header
 
 step 9. (Random)
-for the following titles -> (Mr. Mrs. Dr. Lord Sir) assign one randomly to the user's name (before their name)
+print a random number between 2 and 5 (inclusive) in the report as the user's number of favorite colors (replacing step 8's output)
 
-step 10. (conditionals)
-if "sir" is chosen, instead of prepending it, add "Esquire" after their name
+step 10. (Random)
+for the following titles -> (Mr. Mrs. Dr. Lord Sir) assign one randomly to the user's name in the header (before their name)
+example below:
+
+User's name: Dr. Daaaave
+User's ego: medium
+User's name reversed: evaaaaD
+*******************
+1 Dr. Daaaave evaaaaD
 
 step 11. (Random)
-Create a random ten digit social security number and include in only the screen, not the file (because of HIPPA)
+Add an option "random" for the user to enter for their ego size.
+If this option is chosen, randomly choose a number between 1 and 35 inclusive and print into the header what the number was
+If this option was chosen, print their name that many times
+
+step 12. (conditionals)
+if "sir" is chosen, instead of prepending it, add "Esquire" after their name
+
+step 13. (Random)
+Create a random ten digit social security number and include in only the screen, not the file (because of HIPPA).
+Hint - create a variable for what is supposed to be in the header, separator, and body for both printing to file, and printing to screen so you can make the header different for the file.
