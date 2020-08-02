@@ -93,7 +93,13 @@ If this option is chosen, randomly choose a number between 1 and 35 inclusive an
 If this option was chosen, print their name that many times
 
 step 12. (conditionals)
-if "sir" is chosen, instead of prepending it, add "Esquire" after their name
+if "sir" is chosen, instead of prepending it, add "Esquire" after their name Example:
+
+User's name: Daaaave Esquire
+User's ego: small
+User's name reversed: evaaaaD
+*******************
+1 Daaaave Esquire evaaaaD
 
 step 13. (Random)
 Create a random ten digit social security number and include in only the screen, not the file (because of HIPPA).
