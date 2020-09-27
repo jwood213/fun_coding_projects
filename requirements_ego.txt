@@ -81,7 +81,7 @@ import the random library
 print a random number in the report's header
 
 step 9. (Random)
-print a random number between 2 and 5 (inclusive) in the report as the user's number of favorite colors (replacing step 8's output)
+print a random number between 2 and 5 (inclusive) in the report as the user's current cup of coffee (replacing step 8's output)
 
 step 10. (Random)
 for the following titles -> (Mr. Mrs. Dr. Lord Sir) assign one randomly to the user's name in the header (before their name)
