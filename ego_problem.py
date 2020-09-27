@@ -19,7 +19,9 @@ namereveresed=name[::-1]
 x=x+"User's name reversed: "+namereveresed+"\n"
 x=x+"User's ego: "+ego+"\n"
 #separator
-x=x+"*******************"+"\n"
+namelength = len(name)
+separator = "**"+namelength*"*"+"*"+namelength*"*"
+x=x+separator+"\n"
 #body
 nameline = name+" "+namereveresed+"\n"
 if ego == "small":
@@ -37,5 +39,5 @@ else:
 print(x,file=f)	
 
 #print to screen
-print(x)
+print("\n\n"+x)
 f.close
