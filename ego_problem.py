@@ -1,6 +1,7 @@
 #start input
 name=input("What is your name? ")
-egoinput=input("How big is your ego? ")
+print("How big is your ego?")
+egoinput=input("(Small, Medium, Large) ")
 
 #start output
 #header

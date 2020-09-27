@@ -70,6 +70,9 @@ Print the choices for the ego size for the user to see. Example:
 
 >>What is your ego size? (Small, Medium, Large)
 
+step 7.d (clean interface)
+add two blank lines between the input and the output in the console ONLY
+
 step 8. (Random)
 import the random library
 print a random number in the report's header
