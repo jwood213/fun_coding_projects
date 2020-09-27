@@ -13,14 +13,15 @@ x=x+"User's ego: "+egoinput+"\n"
 #separator
 x=x+"*******************"+"\n"
 #body
+nameline = name+" "+namereveresed+"\n"
 if ego == "small":
-	x=x+"1 "+name+"\n"
+	x=x+"1 "+nameline
 elif ego == "medium":
 	for y in range(1,11):
-		x=x+str(y)+" "+name+"\n"
+		x=x+str(y)+" "+nameline
 elif ego == "large":
 	for y in range(1,101):
-		x=x+str(y)+" "+name+"\n"
+		x=x+str(y)+" "+nameline
 else: 
 	x=x+"User has no ego" 
 
