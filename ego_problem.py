@@ -1,3 +1,6 @@
+#ego problem
+import random
+
 #start input
 name=input("What is your name? ")
 print("How big is your ego?")
@@ -14,7 +17,8 @@ elif ego == "l":
 	ego = "large"
 
 f= open("your_ego.txt", 'w+')
-x="User's name: "+name+"\n"
+x="Random number: "+str(random.randrange(10))+"\n"
+x=x+"User's name: "+name+"\n"
 namereveresed=name[::-1]
 x=x+"User's name reversed: "+namereveresed+"\n"
 x=x+"User's ego: "+ego+"\n"
