@@ -5,6 +5,11 @@ import random
 name=input("What is your name? ")
 print("How big is your ego?")
 egoinput=input("(Small, Medium, Large) ")
+#end input
+
+allTitles = ["Mr.", "Mrs.", "Dr.", "Lord", "Sir"]
+titleIndex = int(random.choice("01234"))
+titleToUse = allTitles[titleIndex]
 
 #start output
 #header
@@ -18,16 +23,18 @@ elif ego == "l":
 
 f= open("your_ego.txt", 'w+')
 x="Current cup of coffee: "+str(random.choice("2345"))+"\n"
-x=x+"User's name: "+name+"\n"
+x=x+"User's name: "+titleToUse+" "+name+"\n"
 namereveresed=name[::-1]
 x=x+"User's name reversed: "+namereveresed+"\n"
 x=x+"User's ego: "+ego+"\n"
+#end header
 #separator
 namelength = len(name)
-separator = "**"+namelength*"*"+"*"+namelength*"*"
+titleLength = len(titleToUse)
+separator = "***"+titleLength*"*"+namelength*"*"+"*"+namelength*"*"
 x=x+separator+"\n"
 #body
-nameline = name+" "+namereveresed+"\n"
+nameline = titleToUse+" "+name+" "+namereveresed+"\n"
 if ego == "small":
 	x=x+"1 "+nameline
 elif ego == "medium":
