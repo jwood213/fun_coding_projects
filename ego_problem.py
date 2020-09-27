@@ -17,7 +17,7 @@ elif ego == "l":
 	ego = "large"
 
 f= open("your_ego.txt", 'w+')
-x="Random number: "+str(random.randrange(10))+"\n"
+x="Random number: "+str(random.choice("2345"))+"\n"
 x=x+"User's name: "+name+"\n"
 namereveresed=name[::-1]
 x=x+"User's name reversed: "+namereveresed+"\n"
